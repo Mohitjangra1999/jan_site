@@ -18,6 +18,6 @@ from django.contrib import admin
 from . import views
 
 urlpatterns = [
-    url(r'^old$', views.index,name='index'),
-    url(r'^new$', views.new_fun, name='new_fun'),
+    url(r'', views.index, name='index'),
+    url(r'', views.new_fun, name='new_fun'),
 ]

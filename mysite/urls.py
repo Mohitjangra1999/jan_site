@@ -18,6 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^books/old_page', include('books.urls')),
+    url(r'', include('books.urls')),
     url(r'^books/new_page' , include('books.urls')),
 ]
