@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.http import  HttpResponse
 
 def index(request):
-    return HttpResponse("<h1 style="color:red">Anshu chutiye teri setting kisse hai ?? </h1>")
+    return HttpResponse("<h1>Anshu jangra tu chutiye hai </h1>")
 
 def new_fun(request):
     return HttpResponse("<h1>This is new homepage</h1>")
