@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import Book
 from django.http import  HttpResponse
 from django.shortcuts import render
+from django.http  import Http404
 
 def index(request):
     all_books = Book.objects.all()
@@ -12,5 +13,9 @@ def index(request):
     return render(request,"books/index.html",context)
 
 def details(request, book_id):
-    return HttpResponse("<h1>You requested info for book " + str(book_id) +"</h1>")
+    try:
+        x = Book.objects.get(id=book_id)
+    except Book.DoesNotExist:
+        raise Http404("This book does not exists.")
+    return render(request, "books/details.html", {"book":x})
 
