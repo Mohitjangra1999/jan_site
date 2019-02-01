@@ -12,6 +12,6 @@ def index(request):
     return HttpResponse(temp.render(context, request))
 
 
-def details(request,book_id):
+def details(request, book_id):
     return HttpResponse("<h1>You requested info for book " + str(book_id) +"</h1>")
 
