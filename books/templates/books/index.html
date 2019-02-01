@@ -1,1 +1,6 @@
 <h1>hi</h1>
+<ul>
+{% for i in all_books %}
+<li><a href="/books/{{i.id}}/">{{i.name}}</a></li>
+{% forend %}
+</ul>
