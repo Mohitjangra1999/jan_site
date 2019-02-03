@@ -6,6 +6,7 @@
 <ul>
 {% for i in object_list %}
 <li><a href="{% url 'books:detail' i.id %}">{{i.name}}</a></li>
+    <img src="{{i.image}}">
 {% endfor  %}
 </ul>
 
