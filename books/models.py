@@ -10,3 +10,4 @@ class Book(models.Model):
     author = models.CharField(max_length=100)
     price = models.CharField(max_length=100)
     type = models.CharField(max_length=100)
+    image= models.CharField(max_length=100)
