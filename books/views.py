@@ -8,10 +8,10 @@ class IndexView(generic.ListView):
 
     def get_queryset(self):
         return Book.objects.all()
-'''
+
 class BookCreate(CreateView):
     model = Book
-    fields = ['name', 'author', 'price', 'type', 'image'] '''
+    fields = ['name', 'author', 'price', 'type', 'image']
 
 class DetailView(generic.DetailView):
     template_name = 'books/details.html'
